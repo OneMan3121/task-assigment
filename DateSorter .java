@@ -55,7 +55,7 @@ public class DateSorter {
      * @return the collection of dates now sorted as per the spec
      */
     public Collection<LocalDate> sortDates(List<LocalDate> unsortedDates) {
-        SortedSet<LocalDate> sortedDates = new TreeSet<>(R_DATE_ORDER);
+        SortedSet<LocalDate> sortedDates = new TreeSet<>(dateOrder);
         sortedDates.addAll(unsortedDates);
         return sortedDates;
     }
